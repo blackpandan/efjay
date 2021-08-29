@@ -1,14 +1,17 @@
 <template>
     
 <ul class="links">
-          <nuxt-link class="links-link" to="/news">
-            News
-          </nuxt-link>
           <nuxt-link
             class="links-link"
             to="/jokes"
           >
             Jokes
+          </nuxt-link>
+          <nuxt-link class="links-link" to="/jobs">
+            Jobs
+          </nuxt-link>
+          <nuxt-link class="links-link" to="/news">
+            News
           </nuxt-link>
           <nuxt-link
             class="links-link"

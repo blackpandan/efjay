@@ -2,7 +2,7 @@
     
   <div class="container">
     <appHeader />
-    <nuxt />
+    <nuxt keep-alive />
   </div>
 
 </template>

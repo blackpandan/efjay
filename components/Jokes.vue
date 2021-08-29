@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 <template>
   <nuxt-link class="jokeCard" :to="'jokes/' + joke.id">
     <p class="jokeCard__joke">

@@ -3,9 +3,9 @@
         <h1 class="header__logo">ef-jay</h1>
         <ul class="header__links">
             <nuxt-link class="header__links-link" to="/">Home</nuxt-link>
+            <nuxt-link class="header__links-link" to="/jobs">Jobs</nuxt-link>
             <nuxt-link class="header__links-link" to="/news">News</nuxt-link>
             <nuxt-link class="header__links-link" to="/jokes">Jokes</nuxt-link>
-            <nuxt-link class="header__links-link" to="/about">About</nuxt-link>
         </ul>
     </header>
 </template>
