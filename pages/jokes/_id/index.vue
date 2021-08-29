@@ -1,8 +1,10 @@
 <template>
 	<div class="inner-container">
-		<div class="jokeCard">
-			<p class="jokeCard__joke">{{ joke.joke }}</p>
-			<small class="jokeCard__id">{{ joke.id }}</small>
+		<div class="controller">
+			<div class="welcomeCard__texts">
+				<p class="jokeCard__joke">{{ joke.joke }}</p>
+				<small class="jokeCard__id">{{ joke.id }}</small>
+			</div>
 		</div>
 	</div>
 

@@ -1,15 +1,15 @@
 <template>
   <div class="newsCard">
     <a :href="news.url">
-      <img :src="news.image" alt="" class="newsCard__img">
       <div class="newsCard__text">
         <p class="newsCard__text-title">{{ news.title }}</p>
-
-        <div class="newsCard__text-source">
-          <p>Source: {{ news.source.name }}</p>
-          <p>Date: {{ news.publishedAt }}</p>
-        </div>
       </div>
+      <img :src="news.image" alt="" class="newsCard__img">
+      <div class="newsCard__text-source">
+        <p>Source: {{ news.source.name }}</p>
+        <p>Date: {{ news.publishedAt }}</p>
+      </div>
+      
     </a>
   </div>
 </template>
@@ -56,6 +56,7 @@ export default {
         &-source{
             padding: 1em 0 0 0;
             color: grey;
+            font-size: 0.8em;
         }
 
      }
