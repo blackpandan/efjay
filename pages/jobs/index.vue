@@ -36,13 +36,16 @@ export default {
     },
     async fetch(){
         const config = {
+            params: {
+              "limit": 100
+            },
             headers:{
             "Accept": "application/json"
             }
         };
 
         const data = await axios.get("https://remotive.io/api/remote-jobs").then(response=>{
-            this.job = response.data.jobs;
+            this.jobs = response.data.jobs;
             console.log(response);
         }).catch(error=>{
             console.log(error);
