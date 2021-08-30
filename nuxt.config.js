@@ -8,8 +8,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A place for Information, I guess still thinking about the perfect description :)' },
+      { hid: 'description', name: 'description', content: 'The best place to find weird dad jokes, top-headlines news and jobs, created with Vue/Nuxt :)' },
       { hid: 'author', name:'author', content: 'James Faith'},
+      { property: 'og:title', content: 'Ef-jay a site to read dad jokes, news and find jobs', vmid: 'og:title'},
+      { property: 'og:type', content: 'website', vmid: 'og:type'},
+      { property: 'og:url', content: 'http://www.efjay.tk', vmid: 'og:url'},
+      { property: 'og:description', content: 'The best place to find weird dad jokes, top-headlines news and jobs, created with Vue/Nuxt :)', vmid: 'og:description'},
+      { property: 'og:image', content: './static/head.webp', vmid: 'og:image'},
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
