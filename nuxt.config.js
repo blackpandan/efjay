@@ -6,8 +6,10 @@ export default {
       lang: 'en'
     },
     meta: [
+
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'google-site-verification', name:"google-site-verification", content:"1Ang9Craw3p3uuvnu1DoiWAZsAkSt6LFJbwcNiMOj4o" },
       { hid: 'description', name: 'description', content: 'The best place to find weird dad jokes, top-headlines news and jobs, created with Vue/Nuxt :)' },
       { hid: 'author', name:'author', content: 'James Faith'},
       { property: 'og:title', content: 'Ef-jay a site to read dad jokes, news and find jobs', vmid: 'og:title'},
