@@ -15,6 +15,12 @@ export default {
       { property: 'og:url', content: 'http://www.efjay.tk', vmid: 'og:url'},
       { property: 'og:description', content: 'The best place to find weird dad jokes, top-headlines news and jobs, created with Vue/Nuxt :)', vmid: 'og:description'},
       { property: 'og:image', content: './static/head.webp', vmid: 'og:image'},
+      { property: 'twitter:title', content: 'Ef-jay a site to read dad jokes, news and find jobs', vmid: 'og:title'},
+      { property: 'twitter:type', content: 'website', vmid: 'og:type'},
+      { property: 'twitter:url', content: 'http://www.efjay.tk', vmid: 'og:url'},
+      { property: 'twitter:description', content: 'The best place to find weird dad jokes, top-headlines news and jobs, created with Vue/Nuxt :)', vmid: 'og:description'},
+      { property: 'twitter:image', content: './static/head.webp', vmid: 'og:image'},
+      { property: 'twitter:card', content: 'summary', vmid: 'twitter:card'},
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
