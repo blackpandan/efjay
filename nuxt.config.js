@@ -6,7 +6,6 @@ export default {
       lang: 'en'
     },
     meta: [
-
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'google-site-verification', name:"google-site-verification", content:"1Ang9Craw3p3uuvnu1DoiWAZsAkSt6LFJbwcNiMOj4o" },
@@ -50,8 +49,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
+    '@nuxtjs/gtm',
     '@nuxtjs/axios'
   ],
+  gtm: {
+    id: 'GTM-TQVP37F'
+  },
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

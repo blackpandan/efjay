@@ -19,6 +19,9 @@ Welcome To Ef-Jay</pre></h1>
   import Links from '../components/Links.vue';
 
   export default{
+    middleware (ctx) {
+    ctx.$gtm.push({ event: 'ssr' })
+  },
     components: {
       "links":Links
     }
