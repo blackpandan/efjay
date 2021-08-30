@@ -44,6 +44,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -54,6 +55,9 @@ export default {
   ],
   gtm: {
     id: 'GTM-TQVP37F'
+  },
+  googleAnalytics: {
+    id: 'G-B208ZDJND1'
   },
 
 
