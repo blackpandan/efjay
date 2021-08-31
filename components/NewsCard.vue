@@ -47,19 +47,26 @@ export default {
          flex-direction: column;
          align-items: center;
          text-align: center;
-         padding: 1em 1em 1em 1em;
+         padding: 1vmin 1vmin 1vmin 1vmin;
 
         &-title{
             font-size: 1.2em;
         }
 
         &-source{
-            padding: 1em 0 0 0;
+            padding: 1vmin 0 0 0;
             color: grey;
             font-size: 0.8em;
         }
 
      }
 
+ }
+
+ @media screen and (max-width: 554px) {
+   .newsCard{
+     height: fit-content;
+     width: 70vmin
+   }
  }
 </style>

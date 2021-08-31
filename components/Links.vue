@@ -47,6 +47,7 @@ export default {
       align-items: center;
       justify-content: center;
       padding: 1em 0 1em 0;
+      flex-wrap: wrap;
 
       &-link{
         padding: 0.8em 2em 0.8em 2em;
@@ -63,5 +64,13 @@ export default {
         }
       }
 
+    }
+
+    @media screen and (max-width:554px){
+      .links{
+        &-link{
+          margin: 3vmin 0 0 5vmin
+        }
+      }
     }
 </style>

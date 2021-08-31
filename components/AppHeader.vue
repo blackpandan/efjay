@@ -6,6 +6,11 @@
             <nuxt-link class="header__links-link" to="/jobs">Jobs</nuxt-link>
             <nuxt-link class="header__links-link" to="/news">News</nuxt-link>
             <nuxt-link class="header__links-link" to="/jokes">Jokes</nuxt-link>
+
+            <nuxt-link class="header__links-icon" to="/"><van-icon name="wap-home" /></nuxt-link>
+            <nuxt-link class="header__links-icon" to="/jobs"><van-icon name="invition" /></nuxt-link>
+            <nuxt-link class="header__links-icon" to="/news"><van-icon name="graphic" /></nuxt-link>
+            <nuxt-link class="header__links-icon" to="/jokes"><van-icon name="smile" /></nuxt-link>
         </ul>
     </header>
 </template>
@@ -35,6 +40,8 @@ export default {
         &__links{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
 
             &-link{
                 background-color: white;
@@ -53,6 +60,10 @@ export default {
                 }
             }
 
+            &-icon{
+                display: none;
+            }
+
         }
     }
 
@@ -63,6 +74,40 @@ export default {
         &:hover{
             background-color: white;
             color: #463739
+        }
+    }
+
+    @media  screen and (max-width: 554px) {
+        .header{
+            &__links{
+                display: inline-flex;
+                align-items: center;
+
+                &-link{
+                    display: none;
+                }
+                &-icon{
+                    display: block;
+                    font-size: 1.5em;
+                    margin: 0 0 0 6vmin;
+                
+                    &:hover{
+                        border-bottom: 2px solid white
+                    }
+                }
+            }
+        }
+
+        .nuxt-link-exact-active{
+            background-color: #ffffff00;
+            color: rgb(253, 255, 125);
+            
+
+            &:hover{
+                background-color: #ffffff00;
+                color: white;
+                border-bottom: 2px solid white
+            }
         }
     }
 </style>

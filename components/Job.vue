@@ -28,7 +28,7 @@ export default {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 2.5em 2em 2.5em 2em;
+        padding: 5vmin 2vmin 2.5vmin 5vmin;
         box-shadow: 0px 6px 12px #c6c6c6;
         border-radius: 1em;
         width: 60vmin;
@@ -39,14 +39,21 @@ export default {
             line-height: 2em;
             
             &-title{
-                padding: 0 0 0.5em 0;
+                padding: 0 0 0.5vmin 0;
                 font-size: 1.5em;
             }
 
             &-span{
                 color: lighten($color: #000000, $amount: 50);
-                padding: 0 0.5em 0 0;
+                padding: 0 0.5vmin 0 0;
             }
+        }
+    }
+
+    @media screen and (max-width: 554px){
+        .jobCard{
+            width: 80vmin;
+            height: fit-content;
         }
     }
 </style>

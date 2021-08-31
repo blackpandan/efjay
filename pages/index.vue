@@ -40,15 +40,21 @@ Welcome To Ef-Jay</pre></h1>
  }
 
  .welcomeCard{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
    width: fit-content;
+   max-width: 600px;
    height: fit-content;
 
     &__texts{
       display: flex;
       flex-direction:column;
       align-items: center;
+      text-align: center;
+      // justify-content: center;
       background-color: rgb(255, 255, 255);
-      padding: 2em 2.5em 2.3em 2.5em;
+      padding: 2vmin 5vmin 5vmin 5vmin;
       line-height: 1.7em;
       border-radius: 1em;
       box-shadow: 0px 6px 10px lighten($color: grey, $amount: 40);
@@ -61,5 +67,6 @@ Welcome To Ef-Jay</pre></h1>
 
     
  }
+
 
 </style>
