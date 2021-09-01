@@ -1,15 +1,20 @@
 <template>
-    <div class="jobCard">
-        <nuxt-link :to="'/jobs/' + job.id">
-            <div class="jobCard__text">
-                <h1 class="jobCard__text-title">{{ job.title }}</h1>
-                <p class="jobCard__text-companyName"><span class="jobCard__text-span">Company:</span> {{ job.company_name }}</p>
-                <p class="jobCard__text-category"><span class="jobCard__text-span">Category:</span> {{ job.category }}</p>
-                <p class="jobCard__text-candidateRequiredLocation"><span class="jobCard__text-span">Location:</span> {{ job.candidate_required_location }}</p>
-                <p class="jobCard__text-salary"><span class="jobCard__text-span">Salary:</span> {{ job.salary }}</p>
-            </div>
-        </nuxt-link>
-    </div>
+    <a :href="job.url">
+        <div class="jobCard">
+                <div class="jobCard__text">
+                    <h1 class="jobCard__text-title">{{ job.title }}</h1>
+                    <p class="jobCard__text-companyName"><span class="jobCard__text-span">Company:</span> {{ job.company_name }}</p>
+                    <p class="jobCard__text-category"><span class="jobCard__text-span">Category:</span> {{ job.category }}</p>
+                    <p class="jobCard__text-candidateRequiredLocation"><span class="jobCard__text-span">Location:</span> {{ job.candidate_required_location }}</p>
+                    <p class="jobCard__text-salary"><span class="jobCard__text-span">Salary:</span> {{ job.salary }}</p>
+                    <!-- <div class="jobCard__description">
+                        <h2 class="jobCard__description-title">Description</h2>
+                        <p class="jobCard__description-text">{{ job.description }}</p>
+
+                    </div> -->
+                </div>
+        </div>
+    </a>
 </template>
 
 <script>

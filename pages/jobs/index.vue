@@ -1,7 +1,7 @@
 <template>
   <div class="inner-container">
     <div class="jobs-controller">
-      <job v-for="(job, index) in jobs" :job="job" :key="index"></job>
+        <job v-for="(job, index) in jobs" :job="job" :key="index"></job>
     </div>
     <div class="error-container" v-if="$fetchState.pending">
       <div class="controller">
