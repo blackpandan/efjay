@@ -1,5 +1,12 @@
 # ef-jay
 
+this is a weird ongoing project that integrates news api and jokes api, made with Vue/Nuxt and vant UI
+
+Live URL:
+http://www.efjay.tk
+
+
+
 ## Build Setup
 
 ```bash
