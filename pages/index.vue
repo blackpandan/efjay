@@ -6,8 +6,8 @@
           <h1 class="welcomeCard__texts-head">
             <pre>Hello, 
 Welcome To Ef-Jay</pre></h1>
-          <p>A place created out of my curiosity for API</p>
-          <p>you might or might not find news and jokes here <b>:)</b></p>
+          <p>A place created to provide easy access to job postings, latest news and dad jokes</p>
+          <p>you will find latest news , available tech jobs and jokes here <b>:)</b></p>
         </div>
         <links :clash="true"/>
       </div>
